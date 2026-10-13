@@ -1,0 +1,14 @@
+# Datasets are far too big for git. Keep the generated .yaml configs though.
+/data/*
+!/data/*.yaml
+/dataset/
+/archive*/
+/HARIS_Weapon_Detection_Dataset_v2/
+
+# Training output and model weights (Ultralytics downloads yolov8s.pt again if it's missing)
+/runs/
+*.pt
+
+.venv*/
+__pycache__/
+.DS_Store
